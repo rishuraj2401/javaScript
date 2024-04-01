@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is h1</h1>
+    <h2>this is h2 understand</h2>
+    <div class="mtdiv">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+document.querySelector('h1').innerHTML="this is changed h1"
+const newNode= document.createElement('h1')
+const addtext=document.createTextNode('this is textnode')
+const newh1=newNode.appendChild(addtext)
+const newchild=document.body.appendChild(newNode).style.backgroundColor="green"
+</script>
+</html>

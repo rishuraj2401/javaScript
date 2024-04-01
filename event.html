@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" type="button">button</button>
+</body>
+
+<script>
+    //type , timestamp, defaultPrevented, target, toElement, srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    //altkey, strlLey,shiftKey , keyCode
+    document.querySelector('#btn').addEventListener('click',function (e) {
+        console.log(e);
+        //bubbling: click event, koi div ke andar img, image pr click krne pr div pr click mana jayega ki nhi
+        // to child se parent event propogation ko bubbling bolte hai;
+        // hm event propogation ko stop v kr skte hai;
+        
+        e.stopPropagation();
+        e.preventDefault();
+        e.target.parentNode
+
+      },false)
+</script>
+</html>
